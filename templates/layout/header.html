@@ -1,0 +1,22 @@
+{% load static %}
+<header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center">
+      <h1 class="logo me-auto"><img src="{% static 'assets/img/fsyco.png' %}" class="img-fluid"  alt=""></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+
+      <nav id="navbar" class="navbar order-last order-lg-0">
+        <ul>
+          <li><a class="nav-link scrollto " href="{% url 'home' %}">Inicio</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'about' %}">Acerca de la Facultad</a></li>
+          <li><a class="nav-link scrollto" href="{% url 'objetivos' %}">Objetivos</a></li>
+          <li><a class="nav-link scrollto " href="#portfolio">Recursos</a></li>         
+          <li><a class="nav-link scrollto " href="{% url "upload_image" %}">Galería de fotos</a></li>         
+          <li><a class="nav-link scrollto" href="{% url 'contact' %}">Contacto</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    
+    </div>
+  </header><!-- End Header -->

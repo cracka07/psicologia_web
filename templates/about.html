@@ -1,0 +1,32 @@
+{% extends  './home.html' %}
+{% load static %}
+
+{% block content %}
+
+<section id="about" class="about section-bg">
+    <div class="container" data-aos="fade-up">
+
+      <div class="row no-gutters">
+        <div class="content col-xl-5 d-flex align-items-stretch">
+          <img src="{% static 'assets/img/facultad.jpg' %}" width="500" class="img-fluid" width="300" height="" alt="">
+        </div>
+        <div class="col-xl-7 d-flex align-items-stretch">
+          <div class="icon-boxes d-flex flex-column justify-content-center">
+            <div class="row">
+               <h4>
+                  Pensar en la carrera de Psicología, implica remontarnos al año 1956 cuando surge la Licenciatura en Psicología y Pedadogía
+                  como una escuela que pertenecía a filosofía.
+                  Esta disciplina a lo largo de la historia propuso miradas distintas sobre la realidad del país así también estratégias innovadoras de lucha.
+                  Apróximadamente en el año 1986 se comenzó a pensar en un plan de estudio, se encaminó en el proyecto de convertirnos en Facultad.
+                  La tarea no fue fácil pero en 1998 se logró y fue así que el 3 de octubre de 1998 la Asamblea Universitaria decide la creación de la Facultad de Psicología
+                
+               </h4>
+             
+            </div>
+          </div><!-- End .content-->
+        </div>
+      </div>
+
+    </div>
+  </section><!-- End About Section -->
+{% endblock  %}
