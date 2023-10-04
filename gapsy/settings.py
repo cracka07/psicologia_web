@@ -37,11 +37,17 @@ INSTALLED_APPS = [
     "django.contrib.sessions",
     "django.contrib.messages",
     "django.contrib.staticfiles",
-    "galery"
+    "recursos",
+    "alumnos",
+    "docacademica",
+    "docinvestigacion",
+    "docjuridica"
+    
 ]
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware",
+    'corsheaders.middleware.CorsMiddleware',
     "django.contrib.sessions.middleware.SessionMiddleware",
     "django.middleware.common.CommonMiddleware",
     "django.middleware.csrf.CsrfViewMiddleware",
@@ -70,6 +76,9 @@ TEMPLATES = [
 
 WSGI_APPLICATION = "gapsy.wsgi.application"
 
+CORS_ALLOWED_ORIGINS = [
+    'http://127.0.0.1:8000',  # Agrega aquí el origen permitido
+]
 
 # Database
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
@@ -123,6 +132,9 @@ STATICFILES_DIRS =[
 ]
 MEDIA_ROOT =  os.path.join(BASE_DIR, 'media')
 MEDIA_URL = '/media/'
+
+# GOOGLE_DRIVE_CREDENTIALS_PATH = os.path.join(BASE_DIR, 'credentials', 'client_secrets.json')
+
 # Default primary key field type
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 

@@ -1,0 +1,40 @@
+{% extends "./home.html" %}
+{% load static %}
+{% block content %}
+
+<section >
+ 
+    <div class="row">
+        {% for subcarpeta in subcarpetas|dictsort:"name" %}
+       
+          <div class="col">
+            
+            <div class="carpeta">
+              
+
+              <div class="iniciales">
+                <a  href="{% url 'other' subcarpeta.id %}"> {{ subcarpeta.name }}</a>
+
+              </div>
+
+            </div>
+          
+          </div>
+{% comment %}        
+          {% if forloop.counter|divisibleby:10 %}
+          {% endif %} {% endcomment %}
+            </div><div class="row">
+       
+         
+        {% endfor %}
+      </div>
+      
+</section>
+
+{% comment %} <script>
+    document.getElementById('mostrarSubcarpetas').addEventListener('click', function() {
+        var subcarpetas = document.getElementById('subcarpetas');
+        subcarpetas.style.display = (subcarpetas.style.display == 'none') ? 'block' : 'none';
+    });
+</script> {% endcomment %}
+{% endblock  %}

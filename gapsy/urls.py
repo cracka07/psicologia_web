@@ -11,6 +11,12 @@ urlpatterns = [
     path("contacto/",views.contact,name="contact"),
     path("about/",views.about,name="about"),
     path("objetivos/",views.objetivos,name="objetivos"),
-    path("gallery/",include("galery.urls")),
+   
+    path("document/",include("recursos.urls")),
+    path("document_al/",include("alumnos.urls")),
+    path("document_msc/",include("miscelanea.urls")),
+    path("document_docacademica/",include("docacademica.urls")),
+     path("document_docinvest/",include("docinvestigacion.urls")),
+      path("document_docjuridica/",include("docjuridica.urls")),
 ]  + static(settings.MEDIA_URL, document_root=settings.MEDIA_ROOT)
 

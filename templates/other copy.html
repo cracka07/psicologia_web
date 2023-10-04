@@ -1,0 +1,32 @@
+{% extends "./home.html" %}
+{% block content %}
+
+<section class="mt-5">
+  <form class="d-flex justify-content-center" method="get">
+  <div class="d-flex">
+   
+        {{ form.year }}
+   
+</div>
+<button class="btn btn-primary" type="submit">Buscar</button>
+
+ </form>
+<div class="row">
+  
+    {% for subsubcarpeta in subsubcarpetas|dictsort:"name" %}
+    <div class="col">
+      <div class="carpeta">
+        {% comment %} <div class="nombre-carpeta">{{ subsubcarpeta.name }}</div> {% endcomment %}
+        <div class="iniciales">
+          <a href="{% url 'mostrar_archivos' subsubcarpeta.id %}">{{ subsubcarpeta.name }}</a>
+        </div>
+
+      </div>
+    </div>
+    {% endfor %}
+  </div>
+</div>
+      
+</section>
+
+{% endblock  %}

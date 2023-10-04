@@ -1,0 +1,39 @@
+{% extends "./home.html" %}
+{% load static %}
+{% block content %}
+
+<section id="faq" class="faq mt-5">
+  <div class="container" data-aos="fade-up">
+
+
+    <div class="row">
+  
+      {% for subsubcarpeta in subsubcarpetas|dictsort:"name" %}
+      <div class="col">
+        <div class="carpeta">
+          {% comment %} <div class="nombre-carpeta">{{ subsubcarpeta.name }}</div> {% endcomment %}
+          <div class="iniciales">
+            <a href="{% url 'mostrar_archivos' subsubcarpeta.id %}">{{ subsubcarpeta.name }}</a>
+          </div>
+  
+        </div>
+      </div>
+      {% endfor %}
+    </div>
+  </div>
+      
+   
+     
+  
+
+   
+      
+     
+
+    </ul>
+
+  </div>
+</section><!-- End Frequently Asked Questions Section -->
+
+
+{% endblock  %}

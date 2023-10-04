@@ -1,22 +1,43 @@
 {% load static %}
-<header id="header" class="fixed-top d-flex align-items-center">
-    <div class="container d-flex align-items-center">
-      <h1 class="logo me-auto"><img src="{% static 'assets/img/fsyco.png' %}" class="img-fluid"  alt=""></h1>
-      <!-- Uncomment below if you prefer to use an image logo -->
-      <!-- <a href="index.html" class="logo me-auto"><img src="assets/img/logo.png" alt=""></a>-->
+<header  class="fixed-top bg-white px-2 align-items-center">
+    <div class="menu-toggle">
+        <div class="bar"></div>
+        <div class="bar"></div>
+        <div class="bar"></div>
+      </div>
+    <nav class="menu">
+    <ul class="menu-list">
+        <li class="menu-item"><a href="{% url "home" %}" class="menu-link">Inicio</a></li>  
+        <li class="menu-item"><a href="{% url "about" %}" class="menu-link">Acerca del Museo</a></li>
+        <li class="menu-item has-submenu">
+            <a href="#" class="menu-link">Archivos</a>
+            <ul class="submenu ">
+                <li class="submenu-item has-submenu-horizontal">
+                    <a href="#" class="submenu-link">Documentación Administrativa</a>
+                    <ul class="submenu-horizontal">
+                        <li class="submenu-item-horizontal"><a href="{% url "administracion" %}">Docente</a></li>
+                        <li class="submenu-item-horizontal"><a href="{% url "administracion_alumnos" %}">Alumno</a></li>
+                        <li class="submenu-item-horizontal"><a href="{% url "administracion_miscelanea" %}">Miscelánea</a></li>
+                    </ul>
+                </li>
+                <li class="submenu-item"><a href="{% url "administracion_academica" %}">Documentación Académica</a></li>
+                <li class="submenu-item"><a href="{% url "administracion_investigacion" %}">Documentación de Investigación</a></li>
+                <li class="submenu-item"><a href="{% url "administracion_juridica" %}">Documentación Jurídica, Normativa</a></li>
 
-      <nav id="navbar" class="navbar order-last order-lg-0">
-        <ul>
-          <li><a class="nav-link scrollto " href="{% url 'home' %}">Inicio</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'about' %}">Acerca de la Facultad</a></li>
-          <li><a class="nav-link scrollto" href="{% url 'objetivos' %}">Objetivos</a></li>
-          <li><a class="nav-link scrollto " href="#portfolio">Recursos</a></li>         
-          <li><a class="nav-link scrollto " href="{% url "upload_image" %}">Galería de fotos</a></li>         
-          <li><a class="nav-link scrollto" href="{% url 'contact' %}">Contacto</a></li>
-        </ul>
-        <i class="bi bi-list mobile-nav-toggle"></i>
-      </nav><!-- .navbar -->
 
-    
-    </div>
+            </ul>
+        </li>
+        <li class="menu-item"><a href="{% url "contact" %}" class="menu-link">Contacto</a></li>
+    </ul>
+</nav>
+
   </header><!-- End Header -->
+
+  <script>
+    document.addEventListener('DOMContentLoaded', function() {
+      document.querySelector('.menu-toggle').addEventListener('click', function() {
+        this.classList.toggle('active');
+        document.querySelector('.menu-list').classList.toggle('active');
+      });
+    });
+    </script>

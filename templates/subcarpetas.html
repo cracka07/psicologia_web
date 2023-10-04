@@ -1,0 +1,27 @@
+{% extends "./home.html" %}
+{% load static %}
+{% block title %}Subcarpetas{% endblock title %}
+{% block  content %}
+<section id="faq" class="faq mt-5">
+    <div class="">
+        <form class="" method="get">
+            {{ form.year }}
+            <button type="submit">Buscar</button>
+        </form>
+    </div>
+    <div class="container mt-5" data-aos="fade-up">
+        <div class="row">
+          
+            {% for subcarpeta_hija in subcarpetas_hijas|dictsort:"name" %}
+                <div class="col-md-3 mb-5">
+                    <a class=" carpeta" href="{% url 'subcarpetas' subcarpeta_hija.id %}">{{ subcarpeta_hija.name }}</a>
+                </div>
+               
+            {% if forloop.counter0|divisibleby:2 and  forloop.last %}
+                </div><div class="row">
+            {% endif %}
+            {% endfor %}
+        </div>
+    </div>
+</section>
+{% endblock  %}

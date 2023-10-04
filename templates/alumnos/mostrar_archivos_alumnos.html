@@ -1,0 +1,29 @@
+{% extends "./home.html" %}
+{% load static %}
+{% block content %}
+
+<section id="faq" class="faq mt-5">
+  <div class="container" data-aos="fade-up">
+
+
+    <div class="row">
+  
+    {% for archivo in archivos %}
+    <div class="col">
+      {% if archivo.name %}
+      <div class="iniciales_archivo">
+    <a href="https://drive.google.com/uc?export=view&id={{ archivo.id }}" target="_blank"> 
+   
+            <i class="fa-sharp fa-solid fa-image"></i> 
+           {{ archivo.name }}"
+    </a>
+  </div>
+      {% else %}
+        <li>{{ archivo.name }}</li>
+      {% endif %}
+</div>
+    {% endfor %}
+</div>
+  </div>
+</section><!-- End Frequently Asked Questions Section -->
+{% endblock %}
