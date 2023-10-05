@@ -23,7 +23,8 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-wsx^k#1$qla&cr-ucwo$tws&bj75daceuag6b2f(@$7vw*zm%8"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+# DEBUG = True
+DEBUG = os.environ.get("DEBUG","False").lower()=="true"
 
 ALLOWED_HOSTS = ["*"]
 
@@ -127,9 +128,9 @@ USE_TZ = True
 
 STATIC_URL = "static/"
 STATIC_ROOT = BASE_DIR / "static"
-# STATICFILES_DIRS =[
-#      'gapsy/static'
-#  ]
+STATICFILES_DIRS =[
+     'gapsy/static'
+ ]
 
 
 # STATIC_ROOT = os.path.join(BASE_DIR, 'static')
