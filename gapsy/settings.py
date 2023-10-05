@@ -23,10 +23,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = "django-insecure-wsx^k#1$qla&cr-ucwo$tws&bj75daceuag6b2f(@$7vw*zm%8"
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 #DEBUG = False
 
-ALLOWED_HOSTS = ["*"]
+ALLOWED_HOSTS = ["127.0.0.1","localhost","museopsicologiaapp.onrender.com"]
 
 #ALLOWED_HOSTS = ['.vercel.app']
 #Application definition
