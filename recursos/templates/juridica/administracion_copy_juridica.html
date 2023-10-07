@@ -12,7 +12,7 @@
         <div id="faq1"  data-bs-parent=".faq-list">
           {% for subcarpeta in subcarpetas|dictsort:"name" %}
           <p class="p_list">
-            <a class="" href="{% url 'mostrar_archivos' subcarpeta.id %}"> {{ subcarpeta.name }}</a>
+            <a class="" href="{% url 'other' subcarpeta.id %}"> {{ subcarpeta.name }}</a>
           </p>
           {% endfor %}
         </div>

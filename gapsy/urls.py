@@ -10,8 +10,6 @@ urlpatterns = [
     path("",views.home,name="home"),
     path("contacto/",views.contact,name="contact"),
     path("about/",views.about,name="about"),
-    path("objetivos/",views.objetivos,name="objetivos"),
-   
     path("document/",include("recursos.urls")),
     path("document_al/",include("alumnos.urls")),
     path("document_msc/",include("miscelanea.urls")),

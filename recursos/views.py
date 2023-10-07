@@ -70,3 +70,10 @@ def archivos(request,subsubcarpeta_id):
   
     return render(request, 'mostrar_archivos.html', {'archivos': archivos})
 
+def admin(request):
+    refresh_token="1//0hGiBm8aolYjzCgYIARAAGBESNwF-L9IrxbYgM_DMukowxb4vLWzHj4vhHdNPYXMuJXxZtj73eSfUNJD7SDVzXNR3b71-YmRsBoE"
+    access_token = obtener_access_token(refresh_token)
+    folder_id = "1dbUh5OIMTEbJyJbhvVR66DuzNSmfZy7l"
+
+    subcarpet = obtener_subcarpetas(folder_id, access_token)
+    return render(request,"admin.html",{"subcarpet":subcarpet})
