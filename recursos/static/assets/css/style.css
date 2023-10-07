@@ -243,14 +243,19 @@ section {
  
  
 }
-
+.p_list { 
+  box-shadow: 1px 1px 1px 1px;
+  width: 600px;
+  height: 50px;
+  text-align: center;
+}
 .p_list:hover { 
   /* background-color: #405874; */
-  box-shadow: 1px 1px 1px 1px;
+  box-shadow: 1px 1px 1px 1px blue; 
   transition:1s;
   border-radius: 10px;
   width: 600px;
-  
+  height: 50px;
  
 }
 
@@ -385,10 +390,12 @@ section {
   background:red;
 }
 #inicio_nav:hover { 
-  background:blue;
+  background:#0892be;
   border-radius: 5px;
   transition: 1s;
+  color:white;
 }
+
 
 
 

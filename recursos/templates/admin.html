@@ -9,11 +9,25 @@
      
 
         <div id="faq1"  data-bs-parent=".faq-list">
-          {% for elem in subcarpet|dictsort:"name" %}
-          <p class="p_list">
-            <a class="" href="{% url 'other' elem.id %}"> {{ elem.name }}</a>
-          </p>
-          {% endfor %}
+        <ul class = "list-inline">
+          <li > 
+            <p class="p_list">
+              <a  href="{% url 'administracion_alumnos'%}">Alumnos</a>
+            </p>
+          </li>
+          <li>
+            <p class="p_list">
+              <a class="" href="{% url 'administracion'%}">Docente</a>
+            </p>
+          </li>
+          <li>
+            <p class="p_list">
+              <a class="" href="{% url 'administracion_miscelanea'%}">Miscelánea</a>
+            </p>
+          </li>
+        </ul>
+         
+          
         </div>
       
       <div>

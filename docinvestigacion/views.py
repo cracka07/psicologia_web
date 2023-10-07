@@ -22,7 +22,7 @@ def ver_other_invest(request, subcarpeta_id):
     # Obtener los archivos .jpg de la subcarpeta
     archivos_jpg = [archivo for archivo in subsubcarpetas if archivo['name'].lower().endswith('.jpg')]
 
-    return render(request, 'invest/mostrar_archivos_invest.html', {'subsubcarpetas': subsubcarpetas, 'archivos_jpg': archivos_jpg})
+    return render(request, 'invest/other_invest.html', {'subsubcarpetas': subsubcarpetas, 'archivos_jpg': archivos_jpg})
 
 
 def archivos_invest(request,subsubcarpeta_id):
