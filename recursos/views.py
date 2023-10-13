@@ -1,7 +1,7 @@
 from django.http import HttpResponse
 from django.shortcuts import render
 import requests
-import requests
+
 
 
 
@@ -45,27 +45,22 @@ def obtener_contenido_carpeta(carpeta_id, access_token):
     return subcarpetas
 
 def administracion(request):
-    refresh_token="1//0hm5HgEoEqFYNCgYIARAAGBESNwF-L9IrDC-1jr44_LUZ6QQGt6wfkN7bDIFm0IU0JaKDxwQ_DrvvUGG3qIb640p-FtcjQSfsahA"
-    access_token = obtener_access_token(refresh_token)
-    folder_id = "1dbUh5OIMTEbJyJbhvVR66DuzNSmfZy7l"
+    access_token = request.access_token
+    folder_id = "1bFX5WvZAARs1wyj8wl8L-PAIn3QTlV_c"
 
     subcarpetas = obtener_subcarpetas(folder_id, access_token)
 
     return render(request, 'administracion_copy.html', {'subcarpetas': subcarpetas})
 
 def ver_other(request, subcarpeta_id):
-    refresh_token="1//0hm5HgEoEqFYNCgYIARAAGBESNwF-L9IrDC-1jr44_LUZ6QQGt6wfkN7bDIFm0IU0JaKDxwQ_DrvvUGG3qIb640p-FtcjQSfsahA"
-
-    access_token = obtener_access_token(refresh_token)
+    access_token = request.access_token
     subsubcarpetas = obtener_contenido_carpeta(subcarpeta_id, access_token)
  
     
     return render(request, 'other.html', {'subsubcarpetas': subsubcarpetas})
 
 def archivos(request,subsubcarpeta_id):
-    refresh_token="1//0hm5HgEoEqFYNCgYIARAAGBESNwF-L9IrDC-1jr44_LUZ6QQGt6wfkN7bDIFm0IU0JaKDxwQ_DrvvUGG3qIb640p-FtcjQSfsahA"
-
-    access_token = obtener_access_token(refresh_token)
+    access_token = request.access_token
     archivos = obtener_contenido_carpeta(subsubcarpeta_id, access_token)
   
     return render(request, 'mostrar_archivos.html', {'archivos': archivos})
