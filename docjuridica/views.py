@@ -7,7 +7,7 @@ import requests
 def administracion_juri(request):
     refresh_token="1//0h3pQxZ468uI7CgYIARAAGBESNwF-L9IrwPUfoModZ4tk2NxbdJl_219ZOYg_FwLeLBuxpzVwbLtTlESTwRTALODr5aoyKn1OX8I"
     access_token = obtener_o_renovar_access_token(request, refresh_token)
-    folder_id = "1rBxdmL9JDgKqprer16CPoug4Lbl-WJrg"
+    folder_id = "1yOQt5Yfn4QHEf8Cm1ghR-WBfRCe6t5ct"
 
     subcarpetas = obtener_subcarpetas(folder_id, access_token)
 
