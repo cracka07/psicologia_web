@@ -1,7 +1,5 @@
 
-# Importar la función 'redirect' desde el módulo 'shortcuts' de Django
 from django.shortcuts import redirect,render
-
 
 def administracion(request):
     # Definir el ID de la carpeta de Google Drive que se va a enlazar
