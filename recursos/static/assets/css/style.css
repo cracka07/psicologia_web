@@ -29,14 +29,14 @@ h6 {
 
 }
 #hero {
-  min-height: 600px;
+  min-height: 560px;
     
   background-image: url('../img/mup.png');
   
- 
+ background-repeat: no-repeat;
   background-position: center;
   background-attachment: fixed;
-  background-size: 110% 100%;
+  background-size: 108% 96%;
 }
 
 #hero:before {
