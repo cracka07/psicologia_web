@@ -1,4 +1,4 @@
-{% extends  './home.html' %}
+{% extends './home.html' %}
 {% load static %}
 
 {% block content %}
@@ -6,30 +6,48 @@
 <section id="about" class="about section-bg">
     <div class="container" data-aos="fade-up">
 
-      <div class="row no-gutters">
-        <div class="content col-xl-5 d-flex align-items-stretch">
-          <img src="{% static 'assets/img/facultad.jpg' %}" width="500" class="img-fluid" width="300" height="" alt="">
-        </div>
-        <div class="col-xl-7 d-flex align-items-stretch">
-          <div class="icon-boxes d-flex flex-column justify-content-center">
-            <div class="row">
-              <h5>
-                El <b>Museo de Psicología</b> reúne diversos objetos y material de la Historia de la Psicologìa, sus campos
-                de Investigaciòn y desarrollo académico, y su impronta local.
-                <h5>
-                  El <b>Archivo Histórico</b> patrimonia y conserva diversos documentos históricos institucionales, del contexto 
-                de creación de la Carrera de Psicología en el año 1958.
-                El Archivo Histórico de la Facultad de Psicología, cuenta con diversos documentos institucionales y diversas 
-                publicaciones científicas locales, como así también las primeras tesis de grado de la carrera son de gran valor 
-                patrimonial para la reconstrucción de la memoria colectiva de la disciplina en Córdoba.
-                </h5>
-              </h5>
-             
+      <div class="row">
+        <div class="col-md-6">
+          <div id="carouselExample" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+              <div class="carousel-item active">
+                <img src="{% static 'assets/img/museo1.jpeg' %}" class="d-block w-90 mx-auto rounded" height="325" alt="First slide">
+              </div>
+              <div class="carousel-item">
+                <img src="{% static 'assets/img/museo2.jpeg' %}" class="d-block w-98 mx-auto" height="350" alt="Second slide">
+              </div>
             </div>
-          </div><!-- End .content-->
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+              <span class="carousel-control-next-icon" aria-hidden="true"></span>
+              <span class="visually-hidden">Next</span>
+            </button>
+          </div>
+        </div>
+        <div class="col-md-6">
+          <div class="row no-gutters mt-4">
+            <div class="content col-xl-12">
+              <div class="icon-boxes d-flex flex-column justify-content-center">
+                <p >
+                  El <b>Museo de Psicología</b> reúne diversos objetos y material de la Historia de la Psicologìa, sus campos
+                  de Investigaciòn y desarrollo académico, y su impronta local.
+                </p >
+                <p>
+                  El <b>Archivo Histórico</b> patrimonia y conserva diversos documentos históricos institucionales, del contexto 
+                  de creación de la Carrera de Psicología en el año 1958. El Archivo Histórico de la Facultad de Psicología, cuenta
+                  con diversos documentos institucionales y diversas publicaciones científicas locales, como así también las primeras
+                  tesis de grado de la carrera son de gran valor patrimonial para la reconstrucción de la memoria colectiva de la disciplina en Córdoba.
+                </p>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
 
     </div>
-  </section><!-- End About Section -->
-{% endblock  %}
+</section><!-- End About Section -->
+
+{% endblock %}
