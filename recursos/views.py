@@ -11,3 +11,12 @@ def administracion(request):
 
 def admin(request):
     return render(request, 'admin.html')
+
+# def galeria(request):
+#     picture_id='1PLIcLC6Xkor4xkp9WQFEJhph3EcPN1-4'
+#     visor_picture=f'https://drive.google.com/embeddedfolderview?id={picture_id}#grid'
+#     context={
+#         "visor_picture":visor_picture
+#     }
+#     return render(request,"galery.html",context)
+    
