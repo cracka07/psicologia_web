@@ -29,7 +29,7 @@ h6 {
 #hero {
   background-image: url('../img/unc.jpg');
   
-  height: 75vh;
+  height: 75.5vh;
 
   background-position: center;
   background-attachment: fixed;
@@ -262,7 +262,7 @@ section {
 
 footer {
 background-color: #eaeaea;
-height: 72px;
+height: 71px;
 
 }
 footer div {
