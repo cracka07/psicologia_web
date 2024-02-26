@@ -1,53 +1,81 @@
-{% extends './home.html' %}
-{% load static %}
-
-{% block content %}
+{% extends './home.html' %} {% load static %} {% block content %}
 
 <section id="about" class="about section-bg">
-    <div class="container" data-aos="fade-up">
-
-      <div class="row">
-        <div class="col-md-6">
-          <div id="carouselExample" class="carousel slide" data-ride="carousel">
-            <div class="carousel-inner">
-              <div class="carousel-item active">
-                <img src="{% static 'assets/img/museo1.jpeg' %}" class="d-block w-90 mx-auto rounded" height="325" alt="First slide">
-              </div>
-              <div class="carousel-item"rounded>
-                <img src="{% static 'assets/img/museo2.jpeg' %}" class="d-block w-98 mx-auto rounded" height="325" width="395" alt="Second slide">
-              </div>
-            </div>
-            <a class="carousel-control-prev" href="#carouselExample" role="button" data-slide="prev">
-              <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-              <span class="sr-only">Previous</span>
-            </a>
-            <a class="carousel-control-next" href="#carouselExample" role="button" data-slide="next">
-              <span class="carousel-control-next-icon" aria-hidden="true"></span>
-              <span class="sr-only">Next</span>
-            </a>
-          </div>
-        </div>
-        <div class="col-md-6">
-          <div class="row no-gutters mt-4">
-            <div class="content col-xl-12">
-              <div class="icon-boxes d-flex flex-column justify-content-center">
-                <p >
-                  El <b>Museo de Psicología</b> reúne diversos objetos y material de la Historia de la Psicologìa, sus campos
-                  de Investigaciòn y desarrollo académico, y su impronta local.
-                </p >
-                <p>
-                  El <b>Archivo Histórico</b> patrimonia y conserva diversos documentos históricos institucionales, del contexto 
-                  de creación de la Carrera de Psicología en el año 1958. El Archivo Histórico de la Facultad de Psicología, cuenta
-                  con diversos documentos institucionales y diversas publicaciones científicas locales, como así también las primeras
-                  tesis de grado de la carrera son de gran valor patrimonial para la reconstrucción de la memoria colectiva de la disciplina en Córdoba.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
+  <div class="container" data-aos="fade-up">
+    <div class="row">
+      <div class="col-md-4">
+        <img
+          src="{% static 'assets/img/museo1.jpeg' %}"
+          class="rounded "
+          height="250"
+          alt="First slide"
+        />
+        <img
+        src="{% static 'assets/img/museo2.jpeg' %}"
+        class="rounded mt-3"
+        width="330"
+        height="250"
+        alt="Second slide"
+      />
       </div>
-
+      <div class="col">
+        Un <b> Archivo Histórico </b> es un patrimonio de valor científico, cultural y
+        social, cuya recuperación se hace necesaria a los fines de promover la
+        reflexión histórica y la memoria colectiva. Es con este objetivo que, en
+        el mes de marzo del año 2011, el Honorable Consejo Directivo de la
+        Facultad de Psicología de la Universidad Nacional de Córdoba aprueba el
+        Proyecto de gestión plurianual del Museo de dicha Institución (HCD Nº
+        55/11)-. El Museo de la Facultad de Psicología se erige como espacio
+        para brindar educación científica a la comunidad a través del desarrollo
+        de estrategias, acciones y actividades originadas en prácticas
+        científicas, y articuladas con distintos actores y estamentos. En este
+        marco, las actividades desarrolladas se centraron en 3 ejes:
+      <br></br>
+      <li>
+        La contextualización de objetos y documentos originales,
+        conceptuados como patrimonio de alto valor histórico, científico y
+        cultural.
+      </li>
+      <li>
+        La conservación y difusión de estos objetos y documentos, para que
+        de ellos derive la posibilidad reflexión histórica y de la
+        construcción de un pensamiento crítico histórico/político sobre la
+        constitución de la disciplina y la profesión.
+      </li>
+      <li>
+        La articulación con los procesos formativos de los estudiantes de la
+        Universidad, trascendiendo las actividades áulicas, ofreciendo modos
+        alternativos orientados a desarrollar discursos y ámbitos de
+        reflexión educativa. En concordancia y articulación con el programa
+        de museos de la universidad nacional de Córdoba, cuyo objetivo
+        básico es contar con un conjunto de museos que brinden un servicio a
+        la comunidad de calidad, con continuidad y comprometidos con el
+        cuidado de su patrimonio, se articula esta estrategia de enseñanza y
+        aprendizaje. Esto involucra la realización de distintas actividades
+        tendientes a desarrollar acciones de enseñanza y aprendizaje por
+        fuera de contextos áulicos convencionales. En este caso se trata de
+        desarrollar competencias básicas de investigación y habilidades para
+        la difusión científica, a través de trabajos de campos, tareas de
+        gabinete, en la conformación de un patrimonio ordenado que ponga en
+        valor científico, cultural y social a los documentos y objetos
+        existentes en el Museo. Esta formación se encuentra orientada a
+        establecer sinergia con el proyecto plurianual del Museo,
+        posibilitando que los avances en el proceso de enseñanza y
+        aprendizaje esten orientados a brindar difusión y educación
+        científica a la comunidad de la Facultad de Psicología, desde
+        estrategias de investigación
+      </li>
+      </div>
+      <div class="row">
+        <div class="col">
+         
+        </div>
+     
+      </div>
     </div>
-</section><!-- End About Section -->
+
+  </div>
+</section>
+<!-- End About Section -->
 
 {% endblock %}

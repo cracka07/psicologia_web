@@ -1,21 +1,19 @@
-html{ 
-  background:#0892be;
-}
+
 
 body {
   
   font-family: 'Lato', sans-serif;
-  background:#0892be;
+  background:#0b95c6;
   color: #444444;
 }
 
 a {
   text-decoration: none;
-  color:black;
+  color:#4b9cd3;
 }
 
 a:hover {
-  color: white;
+  color: #4b9cd3;
   text-decoration: none;
 }
 
@@ -29,11 +27,10 @@ h6 {
 
 }
 #hero {
-  min-height: 450px;
-    
-  background-image: url('../img/mup.png');
+  background-image: url('../img/unc.jpg');
   
- background-repeat: no-repeat;
+  height: 75vh;
+
   background-position: center;
   background-attachment: fixed;
   background-size: 108% 100%;
@@ -233,34 +230,11 @@ section {
     text-align: center;
   }
 }
-.faq { 
-  background-color: #0892be;
-  
-}
-.p_list a {
-  font-size:20px;
-  font-weight: bold;
- 
- 
-}
-.p_list { 
-  box-shadow: 1px 1px 1px 1px;
-  width: 600px;
-  height: 50px;
-  text-align: center;
-}
-.p_list:hover { 
-  /* background-color: #405874; */
-  box-shadow: 1px 1px 1px 1px blue; 
-  transition:1s;
-  border-radius: 10px;
-  width: 600px;
-  height: 50px;
- 
-}
+
+
 
 .contact .info-box {
-  color: #444444;
+  color: #666666;
   text-align: center;
   box-shadow: 0 0 30px rgba(214, 215, 216, 0.6);
   padding: 30px 0 32px 0;
@@ -271,7 +245,7 @@ section {
 
 .contact .info-box h3 {
   font-size: 20px;
-  color: #777777;
+  color: #666666;
   font-weight: 700;
   margin: 10px 0;
 }
@@ -286,116 +260,35 @@ section {
   }
 }
 
-#footer {
-  color: #fff;
-  font-size: 14px;
-  background: #0892be;
-  position: fixed;
-  bottom: 0;
-  left: 0;
-  width: 100%;
-  height: 9%;
-}
+footer {
+background-color: #eaeaea;
+height: 72px;
 
-.subcarpet-ul{ 
-  margin-top:2rem;
- 
-  list-style: none;
-  display:flex;
+}
+footer div {
+  color:#4b9cd3;
 }
 
 
-.subcarpet_boton:hover{ 
+.contact_address{
+  color: #f2f2f2;
   
-  transition:1s;
-  background:#003e91;
-   color:white;
 }
-.carpeta {
-
-  width: 100px; 
-  height: 80px; 
-  border-radius: 5px;
-  padding: 15px;
-  cursor: pointer;
-  position: relative;
-}
-
-.carpeta::before {
-  content: "\1F4C2"; 
-  font-size: 30px; 
-  display: inline;
-  margin-bottom: 3px; 
-
-}
-.nombre-carpeta {
-  font-weight: bold;
-  display: flex;
-  font-size: 11px;
-  position: absolute;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente */
-  color: white;
-  padding: 2px;
-  text-align: center;
-  opacity: 0; /* Inicialmente, invisible */
-  transition: opacity 0.5s ease; /* Animación de transición */
-}
-.carpeta:hover .nombre-carpeta {
-  opacity: 1; /* Al pasar el mouse, se hace visible */
-}
-.iniciales {
-  font-weight: bold;
-  width: 119px;
-  font-size: 13px; /* Ajusta el tamaño según tu preferencia */
-   /* Centra el texto */
-  margin-top: 5px; /* Espacio entre el nombre y las iniciales */
-}
-.iniciales_archivo { 
-  font-weight: bold;
+.contact_address1{
+  color: #f2f2f2;
   
-  font-size: 18.5px; /* Ajusta el tamaño según tu preferencia */
-   /* Centra el texto */
-  margin-top: 10px; /* Espacio entre el nombre y las iniciales */
-}
-.lista-imagenes {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-  display: flex;
-  flex-wrap: wrap;
 }
 
-.imagen {
-  margin: 10px;
-}
-
-
-.foto {
-  width: 150px; /* Ajusta el tamaño según lo necesites */
-  height: 150px; /* Ajusta el tamaño según lo necesites */
-  background-size: cover;
-  border: 1px solid #ccc; /* Añade un borde para simular un marco de foto */
-}
-.foto::before {
-  content: '\1F5BC'; /* Código Unicode para el ícono de cámara (📷) */
-  font-size: 40px;
-}
-.imagen a { 
-  display:grid;
-}
-.dcadmin { 
-  background:red;
-}
 #inicio_nav:hover { 
-  background:#0892be;
+  /* background:#0892be; */
   border-radius: 5px;
-  transition: 1s;
-  color:white;
+  transition: .1s;
+  color:#375a7f;
+  font-weight: bold;
 }
-
+.about_li {
+  list-style: circle;
+}
 
 
 
