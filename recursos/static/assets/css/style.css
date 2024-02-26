@@ -29,7 +29,7 @@ h6 {
 #hero {
   background-image: url('../img/unc.jpg');
   
-  height: 76vh;
+  height: 72vh;
 
   background-position: center;
   background-attachment: fixed;
@@ -262,17 +262,10 @@ section {
 
 footer {
 background-color: #eaeaea;
-height: 71px;
+height: 90px;
 
 }
-footer section div {
-  color:#4b9cd3;
-  border:red;
-}
-footer section{
-  
-  border-top:red;
-}
+
 
 
 .contact_address{
