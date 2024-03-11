@@ -42,9 +42,16 @@ INSTALLED_APPS = [
     "alumnos",
     "docacademica",
     "docinvestigacion",
-    "docjuridica"
+    "docjuridica",
+    "actividades",
+    "doc_psico",
+    "direccion",
+   
     
 ]
+
+
+
 
 MIDDLEWARE = [
     "django.middleware.security.SecurityMiddleware", 
@@ -130,6 +137,9 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 STATIC_ROOT = BASE_DIR/'assets'
+
+MEDIA_URL = '/uploads/'
+MEDIA_ROOT = BASE_DIR / 'uploads'
 
 STATICFILES_STORAGE = "whitenoise.storage.CompressedManifestStaticFilesStorage"
 

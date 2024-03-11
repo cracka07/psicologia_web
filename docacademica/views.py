@@ -1,4 +1,4 @@
-from django.shortcuts import redirect
+from django.shortcuts import redirect,render
 
 def administracion_academica(request):
     folder_id = "1v1Owd3Rp6JRtpAx0_9bpkn9pFiE0p1SV"
@@ -7,5 +7,5 @@ def administracion_academica(request):
     drive_folder_url = f"https://drive.google.com/drive/folders/{folder_id}"
 
    
-    return redirect(drive_folder_url)
+    return render(request,'academy/academy.html')
 

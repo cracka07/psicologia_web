@@ -1,8 +1,9 @@
-from django.urls import path
-from . import views
+# from django.urls import path
+# from . import views
 
-urlpatterns = [
-    path('listar_archivos_alumnos/', views.administracion_alumnos, name='administracion_alumnos'),
-   
-]
+# urlpatterns = [
+#     path('', views.administracion_alumnos, name='administracion_alumnos'),
+#     path('doc_alumnos/', views.doc_alumnos, name='doc_alumnos'),
+
+# ]
 

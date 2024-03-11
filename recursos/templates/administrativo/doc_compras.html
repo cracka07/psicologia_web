@@ -1,0 +1,45 @@
+{% extends "../home.html" %}
+{% load static %}
+{% block content %}
+
+<section id="faq" class="faq mt-5 d-flex">
+  <div class="container" data-aos="fade-up">
+
+    <div class="faq-list accordion" data-aos="fade-up">
+     
+
+        <div id="faq1"  data-bs-parent=".faq-list">
+        <ul class = "list-inline">
+          <li > 
+            <p class="p_list">
+              <img src="{% static 'assets/img/folderpng.png' %}" width="35" height="35"/>
+
+              <a class='btn btn-primary rounded' href="https://drive.google.com/drive/folders/1pCOz_oQJ9azYoUcTwZTwmU0akaCif4cB?hl=es">Bienes, servicios y elementos de trabajo </a>
+
+            </p>
+          </li>
+          <li>
+            <p class="p_list">
+              <img src="{% static 'assets/img/folderpng.png' %}" width="35" height="35"/>
+
+              <a class='btn btn-primary rounded'  href="https://drive.google.com/drive/folders/12cDPtzHB7xep-IlvbhAnGyObHJC4kAvu?hl=es">Elementos recibidos </a>
+            </p>
+          </li>
+          <li>
+            <p class="p_list">
+              <img src="{% static 'assets/img/folderpng.png' %}" width="35" height="35"/>
+
+              <a class='btn btn-primary rounded' href="https://drive.google.com/drive/folders/1rIEjcM3IM03LpKKOiUL0OXaFwKJHuTC8?hl=es">Presupuestos, pedidos y rendiciones </a>
+            </p>
+          </li>
+        </ul>
+         
+          
+        </div>
+      
+      <div>
+  </div>
+</section><!-- End Frequently Asked Questions Section -->
+
+
+{% endblock  %}

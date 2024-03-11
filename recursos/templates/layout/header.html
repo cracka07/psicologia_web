@@ -17,21 +17,31 @@
           <li  class="nav-item">
             <a  id="inicio_nav" class="nav-link" href="{% url 'about' %}">Acerca del Museo</a>
           </li>
+
+        
           <li  class="nav-item">
-            <a id="inicio_nav" class="nav-link" href="{% url 'contact' %}">Contacto</a>
+            <a id="inicio_nav" class="nav-link" href="{% url 'activities' %}">Actividades</a>
           </li>
-         
+          <li class="nav-item">
+            <a id="inicio_nav" class="nav-link" href="{% url 'address' %}">Dirección</a>
+          </li>
           <li id="inicio_nav"  class="nav-item dropdown">
             <a id="inicio_nav" class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-              Archivos
+              Archivos psicología
             </a>
             <ul class="dropdown-menu">
-              <li><a id="inicio_nav" class="dropdown-item" href="{% url 'administracion' %}">Documentación histórica administrativa</a></li>
+              <li><a id="inicio_nav" class="dropdown-item" href="{% url 'admin' %}">Documentación histórica administrativa</a></li>
               <li><a id="inicio_nav" class="dropdown-item" href="{% url 'administracion_academica' %}">Documentación histórica académica</a></li>
               <li><a  id="inicio_nav" class="dropdown-item" href="{% url 'administracion_investigacion' %}">Documentación histórica de investigación</a></li>
               <li><a id="inicio_nav" class="dropdown-item" href="{% url 'administracion_juridica' %}">Documentación histórica jurídica, normativa</a></li>
   
             </ul>
+          </li>
+          <li  class="nav-item">
+            <a  id="inicio_nav" class="nav-link" href="{% url 'doc_psico' %}">Archivos psicoanálisis</a>
+          </li>
+          <li  class="nav-item">
+            <a  id="inicio_nav" class="nav-link" href="#">Catálogo</a>
           </li>
         </ul>
       </div>

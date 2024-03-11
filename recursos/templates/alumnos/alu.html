@@ -1,4 +1,4 @@
-{% extends "./home.html" %}
+{% comment %} {% extends "../home.html" %}
 {% load static %}
 {% block content %}
 
@@ -11,20 +11,19 @@
         <div id="faq1"  data-bs-parent=".faq-list">
         <ul class = "list-inline">
           <li > 
+            
             <p class="p_list">
-              <a  href="{% url 'administracion_alumnos'%}">Alumnos</a>
+              <img src="{% static 'assets/img/folderpng.png' %}" width="35" height="35"/>
+              <a class="btn btn-secondary rounded" href="{% url 'unc'%}">Archivo Central e Histórico de la FFYH</a>
             </p>
           </li>
           <li>
             <p class="p_list">
-              <a class="" href="{% url 'administracion'%}">Docente</a>
+              <img src="{% static 'assets/img/folderpng.png' %}" width="35" height="35"/>
+              <a class="btn btn-secondary rounded" href="{% url 'administracion'%}">Otras Fuentes</a>
             </p>
           </li>
-          <li>
-            <p class="p_list">
-              <a class="" href="{% url 'administracion_miscelanea'%}">Compras y Abastecimientos</a>
-            </p>
-          </li>
+         
         </ul>
          
           
@@ -35,4 +34,4 @@
 </section><!-- End Frequently Asked Questions Section -->
 
 
-{% endblock  %}
+{% endblock  %} {% endcomment %}

@@ -1,0 +1,46 @@
+{% extends "../home.html" %}
+{% load static %}
+{% block content %}
+
+<section id="faq" class="faq mt-5 d-flex">
+  <div class="container" data-aos="fade-up">
+
+    <div class="faq-list accordion" data-aos="fade-up">
+     
+
+        <div id="faq1"  data-bs-parent=".faq-list">
+        <ul class = "list-inline">
+          <li > 
+            <p class="p_list">
+              <img src="{% static 'assets/img/folderpng.png' %}" width="35" height="35"/>
+
+              <a class='btn btn-primary rounded' href="https://drive.google.com/drive/folders/101u5gNpyF_sM9UGyd9elmWzkcFsRU8AB?hl=es">Otras publicaciones del campo PSI </a>
+
+            </p>
+          </li>
+          <li>
+            <p class="p_list">
+              <img src="{% static 'assets/img/folderpng.png' %}" width="35" height="35"/>
+
+              <a class='btn btn-primary rounded'  href="https://drive.google.com/drive/folders/11Yv5orwN5MPfpYyJBPRPwFafdsggMU4Y?hl=es">Publicaciones no periódicas </a>
+            </p>
+          </li>
+          <li>
+            <p class="p_list">
+              <img src="{% static 'assets/img/folderpng.png' %}" width="35" height="35"/>
+
+              <a class='btn btn-primary rounded'  href="https://drive.google.com/drive/folders/1bJ5DJSSt4TIbTzvH-XM0thCK57fWTHKe?hl=es">Publicaciones periódicas </a>
+            </p>
+          </li>
+         
+        </ul>
+         
+          
+        </div>
+      
+      <div>
+  </div>
+</section><!-- End Frequently Asked Questions Section -->
+
+
+{% endblock  %}

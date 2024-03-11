@@ -1,0 +1,42 @@
+{% extends  '../home.html' %}
+{% load static %}
+{% block title %}Actividades{% endblock %}
+{% block content %}
+
+<section id="contact" class="contact">
+  <!-- Services Start -->
+  <div class="container-fluid service ">
+    <div class="container">
+        <div class="mx-auto container d-flex">
+             {% comment %} <a href="{% url 'upload_image' %}">  {% endcomment %}
+                {% comment %} <button class="btn btn-primary">
+                Cargar imagen desde tu dispositivo
+                </button>
+            </a> {% endcomment %}
+            </div>
+
+        <div class="row g-2 justify-content-center">
+            
+            {% for image in imagenes %}
+            <div class="col-md-6 col-lg-4  " >
+                <div class="  rounded">
+                    {% comment %} <form action="{% url 'eliminar_imagen' %}" method="post">
+                        {% csrf_token %}
+                        <input type="hidden" name="imagen" value="{{ image }}">
+                        <button type="submit" class="btn btn-danger">X</button>
+                        </form> {% endcomment %}
+                   <div class="text-center rounded">
+                        <img src="/uploads/{{ image }}" alt="{{ image }}" class="p-2 rounded-top  " height="210" >
+                   </div>
+                 
+                </div>
+            </div>
+                {% endfor %}
+            </div>
+
+        </div>
+    </div>
+</div>
+<!-- Services End -->
+  </section><!-- End Contact Section -->
+{% endblock %}
